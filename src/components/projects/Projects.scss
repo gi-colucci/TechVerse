@@ -1,0 +1,89 @@
+.container-projects{
+    padding-top: 2em;
+    gap: 5em;
+    margin: auto;
+
+    .fil-1, .fil-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        font-family: JetBrains Mono;
+        font-weight: 200;
+        font-size: 4rem;
+        margin-left: 7em;
+    }
+
+    .proj-1, .proj-2, .proj-3, .proj-4{
+        background: linear-gradient(107.15deg, #690094 0%, #21002E 100%);
+        width: 40em;
+        height: 21em;
+        border-radius: 20px;
+        margin: 1.5vw;
+        box-shadow: 12px 12px 10px 0px #69009440; 
+
+        img{
+            float: left;
+            width: 35%;
+            margin: 1em;
+        }
+
+        h1{
+            margin: 1em;
+            font-size: 2rem;
+        }
+
+        .title-div{
+            font-family: Audiowide;
+            font-size: 3.5vh;
+        }
+
+        .txt-click{
+            margin: 0 1em 2em;
+            font-weight: 200;
+            font-family: JetBrains Mono;
+            float: inline-end;
+            cursor: pointer;
+        }
+    }
+}
+
+// media para celulares
+@media (max-width:720px) {
+    .container-projects{
+
+        .title{
+            margin-left: 0;
+            padding-left: 2.5em;
+            // text-align: center;        
+        }
+
+        .fil-1, .fil-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .proj-1, .proj-2, .proj-3, .proj-4{
+            margin: 1em ;
+            width: 80%; 
+            height: auto;
+            font-size: 1em;
+
+            img{
+               height: auto;
+               width: 10em;
+            }
+
+            h1, .txt-click{
+                font-size: 1.8rem;
+            }         
+        }
+    }
+}
+
+        
+}
+
