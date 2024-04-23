@@ -55,8 +55,23 @@
             .line{
                 height: 100vh;
             }
-        }
- 
+        }      
+    }
+}
+
+@media (max-width:420px) {
+    .container{
+        width: 90%;
+        margin: 2.5em auto;
+        flex-direction: column;
         
+        .valores, .title{
+            width: 100%;
+            font-size: 3rem;
+
+            .line{
+                height: 220vh;
+            }
+        }
     }
 }

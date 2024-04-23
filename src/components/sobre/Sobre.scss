@@ -36,6 +36,11 @@
             height:  15em;
         }
     }
+}
 
-    
+@media (max-width:420px) {
+    .container-sobre{
+        padding-top: 3em;
+        font-size: 1.5rem;
+    }
 }
