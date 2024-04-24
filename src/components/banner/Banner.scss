@@ -7,7 +7,7 @@
     position: relative;
 
     .banner {
-        width: 120vw;
+        width: 100vw;
         height: 80vh;
         position: absolute;
         top: 0;
@@ -76,12 +76,11 @@
     }
 }
 
-// media p 
 @media (max-width: 720px) {
     .container-banner{
 
         .banner {
-            width: 120vw;
+            width: 100vw;
             height: 100vh;
         }
 
@@ -122,7 +121,7 @@
 
         .banner {
             width: 120vw;
-            height: 115vh;
+            height: 120vh;
         }
 
         .containerHero {

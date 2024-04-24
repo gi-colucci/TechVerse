@@ -51,7 +51,6 @@
     }
 }
 
-// media para celulares
 @media (max-width:720px) {
     .container-projects{
 
@@ -83,8 +82,14 @@
             }         
         }
     }
-}
+}}
 
-        
-}
+@media (max-width:420px){
+    .container-projects{
 
+        .title{
+            padding: 0;
+            padding-left: 1em;
+            font-size: 3rem;     
+        }
+    }}

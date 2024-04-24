@@ -7,7 +7,7 @@
   
     .imgLogo {
         width: 9em;
-        height: 8em;
+        height: 7em;
     }
     
     .txtFooter{
@@ -19,6 +19,7 @@
         }
     }
 }
+
 @media (max-width:720px) {
     .container-footer{
         flex-direction: column;
@@ -26,6 +27,14 @@
         .imgLogo{
             height: 6.5em;
         }
+    }
+}
+
+@media (max-width:420px) {
+    .container-footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
 

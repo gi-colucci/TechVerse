@@ -18,12 +18,13 @@ export function Form() {
     };
 
     return (
+        
         <div className='container-form'>
             <h1 id="contact"></h1>
             <h1 className='title'>Vamos trabalhar juntos?</h1>
             <h1 className='title'>Entre em contato</h1>
 
-            <form onSubmit={handleSubmit}>
+            <form method="post" action="mailto:devtechverse@gmail.com">
                 <div className='input-group'>
                    <input type="text" placeholder='Nome' id="nome" value={nome} onChange={(event) =>
                     setNome(event.target.value)} required/>
@@ -40,8 +41,9 @@ export function Form() {
                 </div>
                 <div className='btn-submit'>
                     <button type="submit" value=''>Enviar</button>
-                </div>
+                </div> 
             </form>
         </div>
+       
     );
 }
