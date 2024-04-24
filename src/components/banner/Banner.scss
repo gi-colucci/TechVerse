@@ -11,9 +11,10 @@
         height: 80vh;
         position: absolute;
         top: 0;
-        left: -50px;
+        padding: 0%;
+        // left: -50px;
         z-index: 0;
-        animation: bannerMove 2s ease alternate infinite;
+        // animation: bannerMove 2s ease alternate infinite;
     }
 
     .containerHero {
@@ -157,9 +158,9 @@
     
 }
 
-@keyframes bannerMove {
-    to {
-        transform: translateX(20px);
-    }
+// @keyframes bannerMove {
+//     to {
+//         transform: translateX(20px);
+//     }
     
-}
+// }
