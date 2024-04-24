@@ -158,6 +158,50 @@
     
 }
 
+@media (max-width:320px) {
+    .container-banner{
+
+        .banner {
+            width: 100vw;
+            height: 115vh;
+        }
+
+        .containerHero {
+            margin: 25em 0 0;
+            flex-direction: column;
+            text-align: center;
+    
+            .txtIntro {     
+                width:90%;
+
+                .tech-font{
+                    font-size: 4.5rem;
+                }
+                .contato {
+                    flex-direction: column;
+            
+                    .btn-contato {
+
+                    }
+    
+                    
+                    .icons {
+                        
+                        .icon {
+
+                        }
+                    }
+                }
+            }
+
+            .imgLogo {
+                width: 10em;
+                height: 10em;
+            }
+        }
+    }
+    
+}
 // @keyframes bannerMove {
 //     to {
 //         transform: translateX(20px);
