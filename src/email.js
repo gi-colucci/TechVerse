@@ -9,9 +9,9 @@ async function  EnviarEmail(email, mensagem){
         from: email,
         to: "devtechverse@gmail.com",
         subject:'Nova mensagem de contato!',
-        text: 'Email: ${email}\n\nMensagem:\n${mensagem}'
+        text: `Email: ${email}\n\nMensagem:\n${mensagem}` 
     };
 
     await transpoter.sendMail(mailOptions);
 }
-module.exports = {EnviarEmail}
+module.exports = {EnviarEmail};
