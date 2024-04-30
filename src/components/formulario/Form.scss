@@ -5,6 +5,12 @@
     justify-content: center;
     flex-direction: column;
 
+    #contact {
+        scroll-margin-top: 35px; 
+        overflow-y: auto; 
+        height: 100px; 
+      }
+
     .input-group{
         margin-top: 2em;
     }
@@ -54,42 +60,25 @@
             text-indent: 0;
             cursor: pointer;
 
-            &:hover{
-                filter: brightness(1.5);
+                    &:hover{
+                        filter: brightness(1.5);
+                }
             }
         }
     }
 }
 
-@media (max-width:720px) {
+@media (max-width:420px) {
     
-        form{
-        width: 90%;
+    form{
         display: flex;
         align-items: center;
-        justify-content: center;
+        flex-direction: column;  
+        width: 100%; 
+        gap: 1em;
 
-        input{
-            width:25em;
-            height: 4em;
+        .input-group-msg, .input-group{         
+          width:15em;
         }
     }
 }
-}
-
-@media (min-width: 420px) {
-    form{
-        width:80%;
-    }
-}
-
-// @media (max-width:320px) {
-//     form{
-//         width:80%;
-//     }
-
-//     input{
-//         width:10em;
-//         height: 4em;
-//     }
-// }

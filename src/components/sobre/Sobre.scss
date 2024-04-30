@@ -1,3 +1,9 @@
+#about{
+    scroll-margin-top: 10px; 
+    overflow-y: auto; 
+    height: 30px; 
+  }
+
 .container-sobre{
     padding-top: 2em;
     display: flex;
@@ -40,7 +46,7 @@
 
 @media (max-width:420px) {
     .container-sobre{
-        padding-top: 10em;
+        padding-top: 6em;
         font-size: 1.5rem;
     }
 }
