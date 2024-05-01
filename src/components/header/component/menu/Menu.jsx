@@ -35,18 +35,22 @@ export function Menu() {
             
             <nav ref={dropDownRef} className={`menu ${isActive ? "active" : "inactive"}`}>
                 <ul className='navegacao'>
-                <li className="link">
-                    <FaHome className='icon-home' />
-                    <a href="/">Home</a></li> 
-                <li className="link">
-                    <VscQuestion className='icon-about'/>
-                    <a href="#about">About</a></li>
-                <li className="link">
-                    <GoProjectSymlink className='icon-project' />
-                    <a href="#projects">Projects</a></li>
-                <li className="link">
-                    <IoMdContacts className='icon-contact' />
-                    <a href="#contact">Contact</a></li>
+                    <a href="#" > 
+                        <FaHome className='icon' />
+                        <li className="link">Home</li>
+                    </a>
+                    <a href="#about" > 
+                        <VscQuestion className='icon'/>
+                        <li className="link">about</li>
+                    </a>
+                    <a href="#Projects" > 
+                        <GoProjectSymlink className='icon' />
+                        <li className="link">Projects</li>
+                    </a>
+                    <a href="#contact" > 
+                        <IoMdContacts className='icon' />
+                        <li className="link">Contact</li>
+                    </a>
                 </ul>
             </nav>
         </nav>

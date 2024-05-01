@@ -1,5 +1,4 @@
 .menuNav{
-
   .menuButton {
     background-color: transparent;
     border: none;
@@ -26,38 +25,39 @@
     justify-content: center;
     display: flex;
 
-      .navegacao {
-        list-style: none;
-        padding: 0;
-        margin: 1rem;
-      }
-      
-        .link {
-          padding: 2rem;
-         
-          text-align: center;
+    .navegacao {
+      list-style: none;
+      padding: 0;
+
+    
+      a {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        padding: 2rem;
+        text-align: center;
+
+        .icon {
+          height: 32px;
+          width: 32px;
         }
-      
-          .link a {
-            text-decoration: none;
-            color: #ffffff; 
-            padding-right: 1rem;
-          }
-        
-          .link a:hover {
+
+        & link {
+          font-size: 2.4rem;
+          text-decoration: none;
+          color: #fff; 
+
+          &:hover {
             opacity: 0.7; 
+          }
+        }
       }
-            .icon-contact, .icon-project, .icon-about, .icon-home{
-              height: 25px;
-              width: 25px;
-            }
     }
-  
+  }
 
-.active {
-  right: 0; 
-}
-
+  .active {
+    right: 0; 
+  }
 }
 
 .modal {
@@ -70,8 +70,8 @@
   opacity: 0;
   display: none;
 
-    &.active {
-        animation: 0.2s ease-in forwards;
-        display: block;
-    }
+  &.active {
+    animation: 0.2s ease-in forwards;
+    display: block;
+  }
 }

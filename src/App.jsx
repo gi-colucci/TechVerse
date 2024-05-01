@@ -11,9 +11,7 @@ import { Footer } from './components/footer/Footer';
 export function App() {
 
   return (
-
     <>
-     <body>
         <Header />
         <Banner/>
         <Sobre/>
@@ -22,7 +20,6 @@ export function App() {
         <Form/>
         <BackToTopButton/>
         <Footer />
-      </body>
     </>
   )
 }

@@ -16,11 +16,16 @@ export function Banner() {
           <a className='tech-font'>TechVerse</a>
           <h1>Navegando pelas vastidões do desenvolvimento web. Descubra novos horizontes para sua presença online.</h1>
           <div className="contato">
-            <a href='#contact' className='btn-contato'>Entre em Contato Conosco →</a>
+            <a href='#contact' className='btn-contato'>Entre em Contato Conosco →
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
               <div className="icons">
-                <a href='https://www.linkedin.com/in/tech-verse-6429b82a2/'><img src={iconLi} alt="linkedin" className='icon'/></a>
-                <a href='https://www.instagram.com/_techverse_1/'><img src={iconIg} alt="instagram" className='icon'/></a>
-                <a href='https://www.facebook.com/profile.php?id=61558240271859'><img src={iconFb} alt="facebook" className='icon'/></a>
+                <a href='https://www.linkedin.com/in/tech-verse-6429b82a2/'><img src={iconLi} alt="linkedin" className='iconLi'/></a>
+                <a href='https://www.instagram.com/_techverse_1/'><img src={iconIg} alt="instagram" className='iconIg'/></a>
+                <a href='https://www.facebook.com/profile.php?id=61558240271859'><img src={iconFb} alt="facebook" className='iconFc'/></a>
               </div>
           </div>
         </div>

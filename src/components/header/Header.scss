@@ -7,7 +7,7 @@
     z-index: 999;
     width: 100vw;
     padding: 0 5em;
-    filter: blur(1);
+    backdrop-filter: blur(3px);
     
     .imgLogo {
         width: 9em;
