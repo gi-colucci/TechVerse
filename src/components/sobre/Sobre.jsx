@@ -5,8 +5,7 @@ export function Sobre() {
 
     return (
       <>
-      <h1 id="about"></h1>
-      <section className='container-sobre'>
+      <section id="about" className='container-sobre'>
          <div className='sobre-nos'>
             <h1 className='title'>Sobre Nós</h1>
             <h1 className='txt'>Seja bem-vindo ao TechVerse, sua porta de entrada para soluções web inovadoras e personalizadas. Combinando criatividade, expertise técnica e um compromisso inabalável com a excelência, nós da TechVerse estamos aqui para transformar suas ideias em realidade digital.</h1>
