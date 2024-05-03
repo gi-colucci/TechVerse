@@ -1,0 +1,50 @@
+#about{
+    padding-top: 5em;
+    scroll-margin-top: 10px; 
+}
+
+.container-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    margin: auto;
+    width: 80%;
+
+    .title{
+        padding-top: 1em;
+        font-weight: 200;
+        font-family: JetBrains Mono;
+        font-size: 4rem;
+        margin-left: 0.5em;
+    }
+
+    .imgLogo{
+     width: 25em;
+     height: 25em;
+    }    
+}
+
+@media (max-width:720px) {
+    .container-sobre{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width:90%;
+        margin: 12em auto 0;
+        gap: 2em;   
+
+        .imgLogo{
+            width: 15em;
+            height:  15em;
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .container-sobre{
+        padding-top: 6em;
+        font-size: 1.5rem;
+    }
+}

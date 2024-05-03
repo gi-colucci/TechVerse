@@ -1,0 +1,76 @@
+.container{
+    padding-top: 3em;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    margin: auto;
+    width: 80%;
+    gap: 0;
+
+    .title{
+        font-family: JetBrains Mono;
+        font-weight: 200;
+        font-size: 4rem;
+        width: 50%;
+    }
+
+    .valores{
+        display: flex;
+        width: 45%;
+
+        .line{
+            border: none;
+            height: 100%;
+            width: 10px;
+            background-image:linear-gradient(to bottom, #690094 0%, #B71F4E 100%);
+        }
+
+        .textValues{
+            display: grid;
+            padding: 0 2em;
+            gap: 1em;
+
+            h3 {
+                font-size: 2.5rem;
+
+                span {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .container{
+        width: 90%;
+        margin: 2.5em auto;
+        flex-direction: column;
+        
+        .valores, .title{
+            width: 100%;
+            font-size: 3rem;
+
+            .line{
+                height: 100vh;
+            }
+        }      
+    }
+}
+
+@media (max-width:420px) {
+    .container{
+        width: 90%;
+        margin: 2.5em auto;
+        flex-direction: column;
+        
+        .valores, .title{
+            width: 100%;
+            font-size: 3rem;
+
+            .line{
+                height: 220vh;
+            }
+        }
+    }
+}
