@@ -23,6 +23,8 @@
 
 @media (max-width:720px) {
     .container-footer{
+        display: flex;
+        align-items: center;
         flex-direction: column;
 
         .imgLogo{

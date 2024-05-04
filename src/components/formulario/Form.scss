@@ -68,6 +68,19 @@
     }
 }
 
+@media (max-width:720px) {
+    form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;  
+        width: 100%; 
+        gap: 1em;
+
+        .input-group-msg, .input-group{         
+          width:25em;
+        }
+    }
+}
 @media (max-width:420px) {
     
     form{
