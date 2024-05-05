@@ -117,24 +117,25 @@
     #container-projects {
     
         .title{
-            margin-left: 0;
-            padding-left: 3em;
+            margin-left: 0.5em;
+            padding-left: 0;
         }   
     
         .proj{
-            width: 50em;
-            height: 20em;
+            width: 100%;
+            height: 24em;
     
             .front, .back {
 
                 img {
-                   width: 7.5em;
+                   margin: 1.5em 0;
+                   width: 8em;
                    height: 18em;
                 }
     
                 .container-desc, .container-nav {
                     text-align: center;
-                    width: 13em;
+                    // width: 13em;
                     font-size: 1.5rem;
 
                     .txt-title{
@@ -143,9 +144,7 @@
                 }
             }
 
-            .btnNavProj {
-                width: 10em;
-            }
+            
 
             
         }

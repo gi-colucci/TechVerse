@@ -43,7 +43,7 @@ export function Menu() {
                         <VscQuestion className='icon'/>
                         <li className="link">about</li>
                     </a>
-                    <a href="#Projects" > 
+                    <a href="#container-projects" > 
                         <GoProjectSymlink className='icon' />
                         <li className="link">Projects</li>
                     </a>

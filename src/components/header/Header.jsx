@@ -15,7 +15,7 @@ export function Header() {
               <a href="#about">About</a>
             </li>
             <li className="link">
-              <a href="#projects">Projects</a>
+              <a href="#container-projects">Projects</a>
             </li>
             <li className="link">
               <a href="#contact">Contact</a>
