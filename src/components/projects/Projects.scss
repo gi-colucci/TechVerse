@@ -64,6 +64,8 @@
                 }
 
                 .btnNavProj {
+                    width: 95%;
+                    max-width: 200px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -76,7 +78,7 @@
                     background-color: #690094;
                     transition: .3s ease;
 
-                    .icon {
+                    .icon{
                         width: 32px;
                         height: 32px;
                     }
@@ -123,11 +125,7 @@
     
         .proj{
             width: 95%;
-            height: 22em;
-
-            .btnNavProj {
-                width: 185px;
-            }
+            height: 22em;        
 
             .front, .back {
 
@@ -135,7 +133,11 @@
                    width: 8em;
                    height: 20em;
                 }
-    
+                
+                .icon, .btnNavProj {
+                    max-width: 100%;
+                }
+                
                 .container-desc, .container-nav {
                     text-align: center;
                     font-size: 1.5rem;
