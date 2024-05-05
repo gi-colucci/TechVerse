@@ -27,8 +27,8 @@ export function Projects() {
                 <div className={`front ${isFlipped[projectId] ? 'flipped' : ''}`}>
                   <img src={img} className='img' alt="Imagem do projeto"/>
                   <div className="container-desc">
-                    <h2 className='txt-title'>Nome do Projeto</h2>
-                    <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est. Sed tempor auctor nisl, feugiat interdum velit hendrerit ut. </h3>
+                    <h2 className='txt-title'>Lemnos</h2>
+                    <h3 className='txt-description'>Desde sua fundação em 2023, a Lemnos lidera o mercado tecnológico com a sua inovação, oferecendo uma ampla gama de produtos de ponta. </h3>
                   </div>
                 </div>
               </Flipped>
@@ -36,9 +36,9 @@ export function Projects() {
                 <div className={`back ${isFlipped[projectId] ? 'flipped' : ''}`}>
                   <img src={img} className='img' alt="Imagem do projeto"/>
                   <div className="container-nav">
-                    <h2 className='txt-title'>Nome do Projeto</h2>
-                    <a href='#' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
-                    <a href='#' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
+                    <h2 className='txt-title'>Lemnos</h2>
+                    <a href='https://lemnos.vercel.app/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
+                    <a href='https://lemnos.vercel.app/' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                   </div>
                 </div>
               </Flipped>
