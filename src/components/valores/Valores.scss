@@ -74,3 +74,22 @@
         }
     }
 }
+
+@media (max-width:320px) {
+
+    .container{
+        width: 95%;
+        margin: 2.5rem auto;
+        flex-direction: column;
+        
+        .valores, .title{
+            width: 100%;
+            font-size: 3rem;
+
+        .line{
+            padding-left: 0.1em;     
+            height: 310vh;
+            }
+        }
+    }
+}

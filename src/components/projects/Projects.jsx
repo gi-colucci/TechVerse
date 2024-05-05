@@ -5,6 +5,7 @@ import img from '../../assets/Rectangle 44.png';
 import { VscGithubAlt } from "react-icons/vsc";
 import { IoIosGlobe } from "react-icons/io";
 
+
 export function Projects() {
   const [isFlipped, setIsFlipped] = useState({});
 
