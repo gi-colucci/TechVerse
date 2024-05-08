@@ -1,6 +1,6 @@
 #about{
     padding-top: 2em;
-    scroll-margin-top: 10px; 
+    scroll-margin-top: 40px; 
 }
 
 .container-sobre{
@@ -42,15 +42,16 @@
     }
 }
 
-// @media (max-width:420px) {
-//     .container-sobre{
-//         padding-top: 2em;
-//         font-size: 1.5rem;
-//     }
-// }
+@media (max-width:500px) {
+    #about{
+        padding-top: 10em;
+        scroll-margin-top: 15px; 
+    }
+}
 
-// @media (max-width:320px) {
-//     .container-sobre{
-//         padding-top: 2em;
-//     }
-// }
+@media (max-width:320px) {
+    #about{
+        padding-top: 4em;
+        scroll-margin-top: 15px; 
+    }
+}

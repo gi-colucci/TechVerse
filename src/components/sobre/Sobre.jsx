@@ -1,7 +1,23 @@
 import './Sobre.scss'
 import imgLogo from '../../assets/logo.svg';
+import ScrollReveal from 'scrollreveal';
+import React,{useEffect} from 'react';
+
 
 export function Sobre() {
+   useEffect(() => {
+      ScrollReveal().reveal('.container-sobre',
+      {
+      origin: 'left', 
+      distance: '100px', 
+      duration: 1000,
+      delay: 0, 
+      easing: 'ease-out', 
+      opacity: 0, 
+      scale: 1, 
+      reset: false, 
+    });
+    }, []);
 
     return (
       <>

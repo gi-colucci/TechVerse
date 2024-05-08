@@ -1,8 +1,25 @@
 import './Valores.scss'
-import Line from '../../assets/line.png';
+import ScrollReveal from 'scrollreveal';
+import React,{useEffect} from 'react';
 
 export function Valores() {
-    return (
+  useEffect(() => {
+    ScrollReveal().reveal('.container ',
+    {
+    origin: 'left', 
+    distance: '100px', 
+    duration: 1000,
+    delay: 0, 
+    easing: 'ease-out', 
+    opacity: 0, 
+    scale: 1, 
+    reset: false, 
+  });
+
+
+  }, []);
+
+  return (
       <>
       <section className='container'>
         <h2 className='title'>Por que Escolher a TechVerse:</h2>
