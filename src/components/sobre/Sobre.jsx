@@ -15,7 +15,7 @@ export function Sobre() {
       easing: 'ease-out', 
       opacity: 0, 
       scale: 1, 
-      reset: false, 
+      reset: true, 
     });
     }, []);
 

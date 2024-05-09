@@ -17,7 +17,7 @@ export function Projects() {
     easing: 'ease-out', 
     opacity: 0, 
     scale: 1, 
-    reset: false, 
+    reset: true, 
   });
   }, []);
   const [isFlipped1, setIsFlipped1] = useState(false);
