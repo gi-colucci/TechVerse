@@ -1,28 +1,44 @@
 const express = require('express');
+const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const path = require('path');
-const { enviarEmail } = require('./email'); // Certifique-se de implementar o arquivo 'email.js' corretamente
+
 const app = express();
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5173;
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '../public')));
-
-app.post('/sendEmail', async (req, res) => { // Corrigido 'asynic' para 'async'
-    const { email, mensagem } = req.body;
-    try {
-        await enviarEmail(email, mensagem); // Aguarda a conclusão da função enviarEmail
-        res.send('Email enviado com sucesso!');
-    } catch (error) {
-        console.error('Erro ao enviar email:', error);
-        res.status(500).send('Ocorreu um erro no envio do e-mail');
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'SEU_EMAIL@gmail.com',
+        pass: 'SUA_SENHA_DO_GMAIL'
     }
 });
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html')); // Corrigido o caminho para o arquivo index.html
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.post('/api/send-email', (req, res) => {
+    const { name, email, message } = req.body;
+
+    transporter.sendMail({
+        from: email,
+        to: 'devtechverse@gmail.com',
+        subject: 'Novo contato do formulário de contato',
+        html: `
+            <p>Nome: ${name}</p>
+            <p>Email: ${email}</p>
+            <p>Mensagem: ${message}</p>
+        `
+    }, (error, info) => {
+        if (error) {
+            console.error('Erro ao enviar o email:', error);
+            res.status(500).send('Erro ao enviar o email. Por favor, tente novamente mais tarde.');
+        } else {
+            console.log('Email enviado:', info.response);
+            res.status(200).send('Email enviado com sucesso!');
+        }
+    });
 });
 
-app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(Servidor rodando na porta ${PORT});
 });

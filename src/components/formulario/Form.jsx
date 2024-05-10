@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Form.scss'
+// import sendEmail from '../../email';
 import axios from 'axios';
 import ScrollReveal from 'scrollreveal';
 
@@ -13,42 +14,47 @@ export function Form() {
         delay: 0, 
         easing: 'ease-out', 
         opacity: 0, 
-        scale: 1, 
+        scale: 1,
         reset: true, 
       });
     }, []);
 
-    // Referenciando as variáveis
-    const [nome, setNome] = useState('');
-    const [email, setEmail] = useState('');
-    const [mensagem, setMensagem] = useState('');
+    const [form, setForm] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setForm(prevForm => ({
+          ...prevForm,
+          [name]: value,
+        }));
+        console.log(value)
+    };
+    
+    const handleSubmit = async (e) => {
+        e.preventDefault();
         try {
-            const response = await axios.post('/sendEmail', {
-                nome: nome,
-                email: email,
-                mensagem: mensagem
+            await axios.post('/api/send-email', form);
+            alert('Email enviado com sucesso!');
+            setForm({
+                name: '',
+                email: '',
+                message: '',
             });
-            
-            console.log('Resposta do servidor:', response.data);
-            
-            // Limpar os campos do formulário após o envio
-            setNome('');
-            setEmail('');
-            setMensagem('');
         } catch (error) {
-            console.error('Erro ao enviar email:', error);
+            console.error('Erro ao enviar o email:', error);
+            alert('Erro ao enviar o email. Por favor, tente novamente mais tarde.');
         }
     };
 
     return (
         <div className='container-form'>
-            <h1 id="contact"></h1>
-            <h1 className='title'>Vamos trabalhar juntos?</h1>
-            <h1 className='title'>Entre em contato</h1>
+            <h2 id="contact"></h2>
+            <h2 className='title'>Vamos trabalhar juntos?</h2>
+            <h2 className='title'>Entre em contato</h2>
 
             <form onSubmit={handleSubmit}>
                 <div className='input-group'>
@@ -56,8 +62,8 @@ export function Form() {
                         type="text"
                         placeholder='Nome'
                         id="nome"
-                        value={nome}
-                        onChange={(event) => setNome(event.target.value)}
+                        value={form.name} 
+                        onChange={handleChange} 
                         required
                     />
                 </div>
@@ -67,19 +73,19 @@ export function Form() {
                         type="email"
                         placeholder='Email'
                         id="email"
-                        value={email}
-                        onChange={(event) => setEmail(event.target.value)}
+                        value={form.email} 
+                        onChange={handleChange} 
                         required
                     />
                 </div>
 
                 <div className='input-group-msg'>
                     <input
-                        type="mensagem"
+                        type="text"
                         placeholder='Mensagem'
                         id="msg"
-                        value={mensagem}
-                        onChange={(event) => setMensagem(event.target.value)}
+                        value={form.message} 
+                        onChange={handleChange} 
                         required
                     />
                 </div>
