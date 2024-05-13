@@ -80,7 +80,7 @@ export function Projects() {
                   <div className={`front ${isFlipped2 ? 'flipped' : ''}`}>
                     <img src={img} className='img'/>
                     <div className="container-desc">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
+                      <h2 className='txt-title'>Mercury</h2>
                       <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.</h3>
                     </div>
                   </div>
@@ -89,7 +89,7 @@ export function Projects() {
                   <div className={`back ${isFlipped2 ? 'flipped' : ''}`}>
                     <img src={img} className='img'/>
                     <div className="container-nav">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
+                      <h2 className='txt-title'>Alpha Speed</h2>
                       <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
                       <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                     </div>
@@ -105,7 +105,7 @@ export function Projects() {
                   <div className={`front ${isFlipped3 ? 'flipped' : ''}`}>
                     <img src={img} className='img'/>
                     <div className="container-desc">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
+                      <h2 className='txt-title'>Gym Infinite</h2>
                       <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.</h3>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ export function Projects() {
                   <div className={`front ${isFlipped4 ? 'flipped' : ''}`}>
                     <img src={img} className='img'/>
                     <div className="container-desc">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
+                      <h2 className='txt-title'>Gym Infinity</h2>
                       <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.. </h3>
                     </div>
                   </div>
