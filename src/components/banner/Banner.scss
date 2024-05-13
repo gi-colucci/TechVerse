@@ -199,16 +199,23 @@
     }
   }
 }
+@media (max-width:500px) {
+  .container-banner{
+
+    .banner-wrapper {
+      height: 125vh;
+    }
+  }}
 
 @media (max-width:420px) {
   .container-banner{
 
     .banner-wrapper {
-      
+      height: 120vh;
     }
 
     .containerHero {
-        margin: 13em 0 0;
+        margin: 18em 0 0;
         flex-direction: column;
         text-align: center;
 
