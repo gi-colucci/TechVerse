@@ -5,7 +5,9 @@ import { Menu } from './component/menu/Menu'
 export function Header() {
   return (
     <header className='header'>
-        <img src={imgLogo} className='imgLogo'/>
+        <a href="#">
+          <img src={imgLogo} className='imgLogo'/>
+        </a>
         <nav className='nav-infos'>
           <ul >
             <li className="link">

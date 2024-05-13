@@ -73,81 +73,105 @@ export function Projects() {
               </Flipper>
               <h2 className='txt-click' onClick={() => handleClick(1)}>Click Here →</h2>
             </div>
+              <Flipped flipId="front">
+                <div className={`front ${isFlipped1 ? 'flipped' : ''}`}>
+                  <img src={img} className='img'/>
+                  <div className="container-desc">
+                    <h2 className='txt-title'>Lemnos</h2>
+                    <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est. Sed tempor auctor nisl, feugiat interdum velit hendrerit ut. </h3>
+                  </div>
+                </div>
+              </Flipped>
+              <Flipped flipId="back">
+                <div className={`back ${isFlipped1 ? 'flipped' : ''}`}>
+                  <img src={img} className='img'/>
+                  <div className="container-nav">
+                    <h2 className='txt-title'>Lemnos</h2>
+                    <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
+                    <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
+                  </div>
+                </div>
+              </Flipped>
+            </Flipper>
+            <h2 className='txt-click' onClick={() => handleClick(1)}>Click Here →</h2>
+          </div>
 
             <div className='proj'>
             <Flipper flipKey={isFlipped2}>
-                <Flipped flipId="front">
-                  <div className={`front ${isFlipped2 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
-                    <div className="container-desc">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
-                      <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.</h3>
-                    </div>
+              <Flipped flipId="front">
+                <div className={`front ${isFlipped2 ? 'flipped' : ''}`}>
+                  <img src={img} className='img'/>
+                  <div className="container-desc">
+                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est. Sed tempor auctor nisl, feugiat interdum velit hendrerit ut. </h3>
                   </div>
-                </Flipped>
-                <Flipped flipId="back">
-                  <div className={`back ${isFlipped2 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
-                    <div className="container-nav">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
-                      <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
-                      <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
-                    </div>
+                </div>
+              </Flipped>
+              <Flipped flipId="back">
+                <div className={`back ${isFlipped2 ? 'flipped' : ''}`}>
+                  <img src={img} className='img'/>
+                  <div className="container-nav">
+                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
+                    <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                   </div>
-                </Flipped>
-              </Flipper>
-              <h2 className='txt-click' onClick={() => handleClick(2)}>Click Here →</h2>
-            </div>
+                </div>
+              </Flipped>
+            </Flipper>
+            <h2 className='txt-click' onClick={() => handleClick(2)}>Click Here →</h2>
+          </div>
+        </div>
 
-          <div className='proj'>
-          <Flipper flipKey={isFlipped3}>
-                <Flipped flipId="front">
-                  <div className={`front ${isFlipped3 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
-                    <div className="container-desc">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
-                      <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.</h3>
-                    </div>
+        <div className='fil-2'>
+        <div className='proj-3'>
+            <Flipper flipKey={isFlipped3}>
+              <Flipped flipId="front">
+                <div className={`front ${isFlipped3 ? 'flipped' : ''}`}>
+                  <img src={img} className='img'/>
+                  <div className="container-desc">
+                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est. Sed tempor auctor nisl, feugiat interdum velit hendrerit ut. </h3>
                   </div>
-                </Flipped>
-                <Flipped flipId="back">
-                  <div className={`back ${isFlipped3 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
-                    <div className="container-nav">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
-                      <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
-                      <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
-                    </div>
+                </div>
+              </Flipped>
+              <Flipped flipId="back">
+                <div className={`back ${isFlipped3 ? 'flipped' : ''}`}>
+                  <img src={img} className='img'/>
+                  <div className="container-nav">
+                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
+                    <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                   </div>
-                </Flipped>
-              </Flipper>
-              <h2 className='txt-click' onClick={() => handleClick(3)}>Click Here →</h2>
-            </div>
+                </div>
+              </Flipped>
+            </Flipper>
+            <h2 className='txt-click' onClick={() => handleClick(3)}>Click Here →</h2>
+          </div>
 
             <div className='proj'>
             <Flipper flipKey={isFlipped4}>
-                <Flipped flipId="front">
-                  <div className={`front ${isFlipped4 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
-                    <div className="container-desc">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
-                      <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.. </h3>
-                    </div>
+              <Flipped flipId="front">
+                <div className={`front ${isFlipped4 ? 'flipped' : ''}`}>
+                  <img src={img} className='img'/>
+                  <div className="container-desc">
+                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est. Sed tempor auctor nisl, feugiat interdum velit hendrerit ut. </h3>
                   </div>
-                </Flipped>
-                <Flipped flipId="back">
-                  <div className={`back ${isFlipped4 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
-                    <div className="container-nav">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
-                      <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
-                      <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
-                    </div>
+                </div>
+              </Flipped>
+              <Flipped flipId="back">
+                <div className={`back ${isFlipped4 ? 'flipped' : ''}`}>
+                  <img src={img} className='img'/>
+                  <div className="container-nav">
+                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
+                    <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                   </div>
-                </Flipped>
-              </Flipper>
-              <h2 className='txt-click' onClick={() => handleClick(4)}>Click Here →</h2>
-            </div>
+                </div>
+              </Flipped>
+            </Flipper>
+            <h2 className='txt-click' onClick={() => handleClick(4)}>Click Here →</h2>
+          </div>
         </div>
       </section>
   )
