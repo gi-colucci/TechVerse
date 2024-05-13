@@ -43,7 +43,7 @@ export function Projects() {
                 <div className={`front ${isFlipped1 ? 'flipped' : ''}`}>
                   <img src={img} className='img'/>
                   <div className="container-desc">
-                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h2 className='txt-title'>Lemnos</h2>
                     <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est. Sed tempor auctor nisl, feugiat interdum velit hendrerit ut. </h3>
                   </div>
                 </div>
@@ -52,7 +52,7 @@ export function Projects() {
                 <div className={`back ${isFlipped1 ? 'flipped' : ''}`}>
                   <img src={img} className='img'/>
                   <div className="container-nav">
-                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h2 className='txt-title'>Lemnos</h2>
                     <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
                     <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                   </div>
@@ -68,7 +68,7 @@ export function Projects() {
                 <div className={`front ${isFlipped2 ? 'flipped' : ''}`}>
                   <img src={img} className='img'/>
                   <div className="container-desc">
-                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h2 className='txt-title'>Mercury</h2>
                     <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est. Sed tempor auctor nisl, feugiat interdum velit hendrerit ut. </h3>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export function Projects() {
                 <div className={`back ${isFlipped2 ? 'flipped' : ''}`}>
                   <img src={img} className='img'/>
                   <div className="container-nav">
-                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h2 className='txt-title'>Mercury</h2>
                     <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
                     <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                   </div>
@@ -95,7 +95,7 @@ export function Projects() {
                 <div className={`front ${isFlipped3 ? 'flipped' : ''}`}>
                   <img src={img} className='img'/>
                   <div className="container-desc">
-                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h2 className='txt-title'>Alpha Speed</h2>
                     <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est. Sed tempor auctor nisl, feugiat interdum velit hendrerit ut. </h3>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ export function Projects() {
                 <div className={`back ${isFlipped3 ? 'flipped' : ''}`}>
                   <img src={img} className='img'/>
                   <div className="container-nav">
-                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h2 className='txt-title'>Alpha Speed</h2>
                     <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
                     <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                   </div>
@@ -120,7 +120,7 @@ export function Projects() {
                 <div className={`front ${isFlipped4 ? 'flipped' : ''}`}>
                   <img src={img} className='img'/>
                   <div className="container-desc">
-                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h2 className='txt-title'>Gym Infinite</h2>
                     <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est. Sed tempor auctor nisl, feugiat interdum velit hendrerit ut. </h3>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export function Projects() {
                 <div className={`back ${isFlipped4 ? 'flipped' : ''}`}>
                   <img src={img} className='img'/>
                   <div className="container-nav">
-                    <h2 className='txt-title'>Nome do Projeto</h2>
+                    <h2 className='txt-title'>Gym Infinite</h2>
                     <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
                     <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                   </div>
