@@ -15,7 +15,7 @@ export function Form() {
         easing: 'ease-out', 
         opacity: 0, 
         scale: 1,
-        reset: true, 
+        reset: false, 
       });
     }, []);
 

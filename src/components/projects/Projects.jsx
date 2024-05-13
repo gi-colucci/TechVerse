@@ -17,7 +17,7 @@ export function Projects() {
     easing: 'ease-out', 
     opacity: 0, 
     scale: 1, 
-    reset: true, 
+    reset: false, 
   });
   }, []);
   const [isFlipped1, setIsFlipped1] = useState(false);
@@ -89,9 +89,9 @@ export function Projects() {
                   <div className={`back ${isFlipped2 ? 'flipped' : ''}`}>
                     <img src={img} className='img'/>
                     <div className="container-nav">
-                      <h2 className='txt-title'>Alpha Speed</h2>
-                      <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
-                      <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
+                      <h2 className='txt-title'>Mercury</h2>
+                      <a href='https://lucasbonato.github.io/Mercury/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
+                      <a href='https://github.com/LucasBonato/Mercury' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                     </div>
                   </div>
                 </Flipped>
@@ -105,7 +105,7 @@ export function Projects() {
                   <div className={`front ${isFlipped3 ? 'flipped' : ''}`}>
                     <img src={img} className='img'/>
                     <div className="container-desc">
-                      <h2 className='txt-title'>Gym Infinite</h2>
+                      <h2 className='txt-title'>Alpha Speed</h2>
                       <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.</h3>
                     </div>
                   </div>
@@ -114,8 +114,8 @@ export function Projects() {
                   <div className={`back ${isFlipped3 ? 'flipped' : ''}`}>
                     <img src={img} className='img'/>
                     <div className="container-nav">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
-                      <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
+                      <h2 className='txt-title'>Alpha Speed</h2>
+                      <a href='https://l7643.github.io/AlphaSpeed/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
                       <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                     </div>
                   </div>
@@ -139,9 +139,9 @@ export function Projects() {
                   <div className={`back ${isFlipped4 ? 'flipped' : ''}`}>
                     <img src={img} className='img'/>
                     <div className="container-nav">
-                      <h2 className='txt-title'>Nome do Projeto</h2>
-                      <a href='' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
-                      <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
+                      <h2 className='txt-title'>Gym Infinity</h2>
+                      <a href='https://lucasbonato.github.io/Infinity-Gym/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
+                      <a href='https://github.com/LucasBonato/Infinity-Gym' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                     </div>
                   </div>
                 </Flipped>

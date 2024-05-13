@@ -43,11 +43,11 @@ export function Banner() {
               <span></span>
               <span></span>
             </a>
-              <div className="icons">
-                <a href='https://www.linkedin.com/in/tech-verse-6429b82a2/' target='_blank'><img src={iconLi} alt="linkedin" className='iconLi'/></a>
-                <a href='https://www.instagram.com/_techverse_1/' target='_blank'><img src={iconIg} alt="instagram" className='iconIg'/></a>
-                <a href='https://www.facebook.com/profile.php?id=61558240271859' target='_blank'><img src={iconFb} alt="facebook" className='iconFc'/></a>
-              </div>
+            <div className="icons">
+              <a href='https://www.linkedin.com/in/tech-verse-6429b82a2/' target='_blank'><img src={iconLi} alt="linkedin" className='iconLi'/></a>
+              <a href='https://www.instagram.com/_techverse_1/' target='_blank'><img src={iconIg} alt="instagram" className='iconIg'/></a>
+              <a href='https://www.facebook.com/profile.php?id=61558240271859' target='_blank'><img src={iconFb} alt="facebook" className='iconFc'/></a>
+            </div>
           </div>
         </div>
         <img src={imgLogo} className='imgLogo'/>

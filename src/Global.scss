@@ -22,6 +22,22 @@ $font-web: "Share Tech", sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  &::-webkit-scrollbar {
+    width: 0.5em;
+    background: $color-bg;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 25px;
+    background-color: $color-bg;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #6807a47d;
+    border: 1px solid $color-bg;
+  }
 }
 
 html {
