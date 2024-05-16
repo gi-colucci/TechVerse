@@ -26,11 +26,7 @@ export function Form() {
     });
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
-        setForm(prevForm => ({
-          ...prevForm,
-          [name]: value,
-        }));
+        const { name, value } = e.target;setForm(prevForm => ({...prevForm,[name]: value,}));
         console.log(value)
     };
     
@@ -61,6 +57,7 @@ export function Form() {
                     <input
                         type="text"
                         placeholder='Nome'
+                        name="name"
                         id="nome"
                         value={form.name} 
                         onChange={handleChange} 
@@ -72,6 +69,7 @@ export function Form() {
                     <input
                         type="email"
                         placeholder='Email'
+                        name="email"
                         id="email"
                         value={form.email} 
                         onChange={handleChange} 
@@ -83,6 +81,7 @@ export function Form() {
                     <input
                         type="text"
                         placeholder='Mensagem'
+                        name="message"
                         id="msg"
                         value={form.message} 
                         onChange={handleChange} 
