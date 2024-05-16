@@ -5,19 +5,19 @@ import axios from 'axios';
 import ScrollReveal from 'scrollreveal';
 
 export function Form() {
-    useEffect(() => {
-        ScrollReveal().reveal('.container-form ',
-        {
-        origin: 'left', 
-        distance: '100px', 
-        duration: 1000,
-        delay: 0, 
-        easing: 'ease-out', 
-        opacity: 0, 
-        scale: 1,
-        reset: false, 
-      });
-    }, []);
+    // useEffect(() => {
+    //     ScrollReveal().reveal('.container-form ',
+    //     {
+    //     origin: 'left', 
+    //     distance: '100px', 
+    //     duration: 1000,
+    //     delay: 0, 
+    //     easing: 'ease-out', 
+    //     opacity: 0, 
+    //     scale: 1,
+    //     reset: false, 
+    //   });
+    // }, []);
 
     const [form, setForm] = useState({
         name: '',

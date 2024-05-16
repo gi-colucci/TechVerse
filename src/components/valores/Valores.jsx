@@ -3,21 +3,21 @@ import ScrollReveal from 'scrollreveal';
 import React,{useEffect} from 'react';
 
 export function Valores() {
-  useEffect(() => {
-    ScrollReveal().reveal('.container ',
-    {
-    origin: 'left', 
-    distance: '100px', 
-    duration: 1000,
-    delay: 0, 
-    easing: 'ease-out', 
-    opacity: 0, 
-    scale: 1, 
-    reset: false, 
-  });
+  // useEffect(() => {
+  //   ScrollReveal().reveal('.container ',
+  //   {
+  //   origin: 'left', 
+  //   distance: '100px', 
+  //   duration: 1000,
+  //   delay: 0, 
+  //   easing: 'ease-out', 
+  //   opacity: 0, 
+  //   scale: 1, 
+  //   reset: false, 
+  // });
 
 
-  }, []);
+  // }, []);
 
   return (
       <>

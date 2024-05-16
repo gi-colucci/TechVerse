@@ -7,19 +7,20 @@ import { IoIosGlobe } from "react-icons/io";
 import ScrollReveal from 'scrollreveal';
 
 export function Projects() {
-  useEffect(() => {
-    ScrollReveal().reveal('#container-projects',
-    {
-    origin: 'left', 
-    distance: '100px', 
-    duration: 1000,
-    delay: 0, 
-    easing: 'ease-out', 
-    opacity: 0, 
-    scale: 1, 
-    reset: false, 
-  });
-  }, []);
+  // useEffect(() => {
+  //   ScrollReveal().reveal('#container-projects',
+  //   {
+  //   origin: 'left', 
+  //   distance: '100px', 
+  //   duration: 1000,
+  //   delay: 0, 
+  //   easing: 'ease-out', 
+  //   opacity: 0, 
+  //   scale: 1, 
+  //   reset: false, 
+  // });
+  // }, []);
+  
   const [isFlipped1, setIsFlipped1] = useState(false);
   const [isFlipped2, setIsFlipped2] = useState(false);
   const [isFlipped3, setIsFlipped3] = useState(false);
