@@ -122,27 +122,29 @@
             margin-left: 0.5em;
             padding-left: 0;
         }   
+
+        #projetos {
     
         .proj{
             width: 30em;
-            height: 22em;        
+            height: 20em;        
 
             .front, .back {
 
                 img {
-                    width: 30em;
-
+                    width: 35%;
                 }
                 
-                // .icon, .btnNavProj {
-                //     max-width: 100%;
-                // }
+                .icon, .btnNavProj {
+                    max-width: 100%;
+                }
                 
                 .container-desc, .container-nav {
+                    text-align: center;
                     display: flex;
                     flex-direction: column;
                     flex-grow: 1;
-                    width: 30em;
+                    max-width: 50%;
 
                     .txt-title{
                         font-size: 2.5rem;
@@ -152,10 +154,10 @@
 
             .txt-click{
                 font-size: 2rem;
-                bottom: 5px;
                 right: 5px;
             }
             
+            }
         }
     }
 }
@@ -168,16 +170,18 @@
             margin-left: 0.5em;
             padding-left: 0;
         }   
-    
+
+         #projetos {
+
         .proj{
             width: 95%;
-            height: 22em;        
+            height: 20em;        
 
             .front, .back {
 
                 img {
-                   width: 8em;
-                   height: 20em;
+                   width: 32%;
+                   height: 18em;
                 }
                 
                 .icon, .btnNavProj {
@@ -193,12 +197,13 @@
                     }
                 }
             }          
-        .txt-click{
-            font-size: 2rem;
-            bottom: 5px;
-            right: 5px;
+            .txt-click{
+                font-size: 2rem;
+                bottom: 5px;
+                right: 5px;
             }
-            
+                
+            }
         }
     }
 }
@@ -210,17 +215,20 @@
         .title{
             margin-left: 0.5em;
             padding-left: 0;
+            font-size: 3rem;
         }   
-    
+        
+        #projetos{
         .proj{
             width: 95%;
-            height: 25.5em;        
+            height: 18em;        
 
             .front, .back {
 
                 img {
-                   width:3em;
-                   height: 20em;
+                   padding-left: 1rem;
+                   width: 35%;
+                   height: 15em;
                 }
                 
                 .icon, .btnNavProj {
@@ -236,12 +244,8 @@
                     }
                 }
             }          
-        .txt-click{
-            font-size: 2rem;
-            bottom: 8px;
-            right: 5px;
+                
             }
-            
         }
     }
 }
