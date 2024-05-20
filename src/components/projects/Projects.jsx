@@ -107,7 +107,7 @@ export function Projects() {
                     <img src={img} className='img'/>
                     <div className="container-desc">
                       <h2 className='txt-title'>Alpha Speed</h2>
-                      <h3 className='txt-description'>Alpha Speed, e-commerce de veículos excepcionais, feito utilizando HTML, CSS & JS. Fundada em 2021, Alpha Speed tem uma longa história de fornecer veículos de alta qualidade e serviços excelentes aos nossos clientes.</h3>
+                      <h3 className='txt-description'>Alpha Speed, e-commerce de veículos excepcionais, feito utilizando HTML, CSS & JS. Fundada em 2021, tendo uma longa história de fornecer veículos de alta qualidade e serviços excelentes.</h3>
                     </div>
                   </div>
                 </Flipped>
