@@ -35,6 +35,7 @@ export function Menu() {
             
             <nav ref={dropDownRef} className={`menu ${isActive ? "active" : "inactive"}`}>
                 <ul className='navegacao'>
+                    <button onClick={toggleMenu} className='btnFechar'>X</button>
                     <a href="#" > 
                         <FaHome className='icon' />
                         <li className="link">Home</li>
@@ -56,4 +57,3 @@ export function Menu() {
         </nav>
     )
 }
-

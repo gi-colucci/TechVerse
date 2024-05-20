@@ -57,7 +57,7 @@ export function Projects() {
                     <img src={img} className='img'/>
                     <div className="container-desc">
                       <h2 className='txt-title'>Lemnos</h2>
-                      <h3 className='txt-description'>Desde sua fundação em 2023, a Lemnos lidera o mercado tecnológico com a sua inovação, oferecendo uma ampla gama de produtos de ponta. </h3>
+                      <h3 className='txt-description'>Projeto e-commerce feito utilizando React, SCSS & JS. Desde sua fundação em 2023, a Lemnos lidera o mercado tecnológico com a sua inovação, oferecendo uma ampla gama de produtos eletrônicos de ponta. </h3>
                     </div>
                   </div>
                 </Flipped>
@@ -107,7 +107,7 @@ export function Projects() {
                     <img src={img} className='img'/>
                     <div className="container-desc">
                       <h2 className='txt-title'>Alpha Speed</h2>
-                      <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.</h3>
+                      <h3 className='txt-description'>Alpha Speed, e-commerce de veículos excepcionais, feito utilizando HTML, CSS & JS. Fundada em 2021, Alpha Speed tem uma longa história de fornecer veículos de alta qualidade e serviços excelentes aos nossos clientes.</h3>
                     </div>
                   </div>
                 </Flipped>
@@ -117,7 +117,7 @@ export function Projects() {
                     <div className="container-nav">
                       <h2 className='txt-title'>Alpha Speed</h2>
                       <a href='https://l7643.github.io/AlphaSpeed/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
-                      <a href='' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
+                      <a href='https://github.com/L7643/AlphaSpeed' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
                     </div>
                   </div>
                 </Flipped>
