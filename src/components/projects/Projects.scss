@@ -124,19 +124,35 @@
         }   
 
         #projetos {
-    
+
         .proj{
             width: 30em;
-            height: 20em;        
+            height: 28em;        
 
             .front, .back {
+                padding-left: 2.3rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
 
                 img {
-                    width: 35%;
+                    width: 95%;
+                    height: 12em;
                 }
-                
-                .icon, .btnNavProj {
-                    max-width: 100%;
+
+                .btn-container {
+                    display: flex; 
+                    justify-content: space-around; 
+                    margin-top: 1em;
+                    gap: 5%;
+
+                    .btnNavProj {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        max-width: 90%;
+                    }
                 }
                 
                 .container-desc, .container-nav {
@@ -144,7 +160,7 @@
                     display: flex;
                     flex-direction: column;
                     flex-grow: 1;
-                    max-width: 50%;
+                    max-width: 90%;
 
                     .txt-title{
                         font-size: 2.5rem;
@@ -175,17 +191,18 @@
 
         .proj{
             width: 95%;
-            height: 22em;        
+            height: 27em;        
+            flex-direction: column;
 
             .front, .back {
+         
 
                 img {
-                   width: 32%;
-                   height: 18em;
+                    
                 }
                 
                 .icon, .btnNavProj {
-                    max-width: 100%;
+                    max-width: 90%;
                 }
                 
                 .container-desc, .container-nav {
@@ -215,35 +232,41 @@
         .title{
             margin-left: 0.5em;
             padding-left: 0;
-            font-size: 3rem;
         }   
-        
-        #projetos{
+
+         #projetos {
+
         .proj{
-            width: 96%;
-            height: 20em;        
+            width: 95%;
+            height: 27em;        
+            flex-direction: column;
 
             .front, .back {
+         
 
                 img {
-                   padding-left: 1rem;
-                   width: 35%;
-                   height: 15em;
+                    
                 }
                 
                 .icon, .btnNavProj {
-                    max-width: 100%;
+                    max-width: 89%;
+
                 }
                 
                 .container-desc, .container-nav {
                     text-align: center;
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
 
                     .txt-title{
-                        font-size: 2rem;
+                        font-size: 2.5rem;
                     }
                 }
             }          
+            .txt-click{
+                font-size: 2rem;
+                bottom: 5px;
+                right: 5px;
+            }
                 
             }
         }

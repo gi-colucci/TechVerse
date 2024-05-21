@@ -53,6 +53,7 @@ html {
     background-color: $color-bg;
     color: $color-font;
     position: relative;
+    overflow-x: hidden;
 
     input {
       outline: none;
