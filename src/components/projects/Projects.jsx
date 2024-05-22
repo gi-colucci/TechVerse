@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Flipper, Flipped } from 'react-flip-toolkit';
 import './Projects.scss';
-import img from '../../assets/Rectangle 44.png';
+import img from '../../assets/img-projects.jpeg';
 import { VscGithubAlt } from "react-icons/vsc";
 import { IoIosGlobe } from "react-icons/io";
 import ScrollReveal from 'scrollreveal';
@@ -66,10 +66,8 @@ export function Projects() {
                     <img src={img} className='img'/>
                     <div className="container-nav">
                       <h2 className='txt-title'>Lemnos</h2>
-                      <div className='btn-container'>
                       <a href='https://lemnos.vercel.app/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
                       <a href='https://github.com/L7643/Lemnos' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
-                      </div>
                     </div>
                   </div>
                 </Flipped>
@@ -93,10 +91,8 @@ export function Projects() {
                     <img src={img} className='img'/>
                     <div className="container-nav">
                       <h2 className='txt-title'>Mercury</h2>
-                      <div className='btn-container'>
-                      <a href='https://lucasbonato.github.io/Mercury/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
+                       <a href='https://lucasbonato.github.io/Mercury/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
                       <a href='https://github.com/LucasBonato/Mercury' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
-                      </div>
                     </div>
                   </div>
                 </Flipped>
@@ -120,10 +116,8 @@ export function Projects() {
                     <img src={img} className='img'/>
                     <div className="container-nav">
                       <h2 className='txt-title'>Alpha Speed</h2>
-                      <div className='btn-container'>
                       <a href='https://l7643.github.io/AlphaSpeed/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
                       <a href='https://github.com/L7643/AlphaSpeed' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
-                      </div>
                     </div>
                   </div>
                 </Flipped>
@@ -147,10 +141,8 @@ export function Projects() {
                     <img src={img} className='img'/>
                     <div className="container-nav">
                       <h2 className='txt-title'>Gym Infinity</h2>
-                      <div className='btn-container'>
                       <a href='https://lucasbonato.github.io/Infinity-Gym/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
                       <a href='https://github.com/LucasBonato/Infinity-Gym' className='btnNavProj'><VscGithubAlt className='icon'/>Repositório</a>
-                      </div>
                     </div>
                   </div>
                 </Flipped>

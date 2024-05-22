@@ -41,6 +41,12 @@
         }
     }
 }
+@media (max-width:720px) {
+    #about{
+        padding-top: 6em;
+        scroll-margin-top: 15px; 
+    }
+}
 
 @media (max-width:500px) {
     #about{
@@ -58,7 +64,7 @@
 
 @media (max-width:320px) {
     #about{
-        padding-top: 1em;
+        padding-top: 0em;
         scroll-margin-top: 15px; 
 
         .sobre-nos{

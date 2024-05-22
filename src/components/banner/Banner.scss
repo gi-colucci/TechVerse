@@ -168,11 +168,11 @@
 
 @media (max-width: 720px) {
   .container-banner{
-    padding-top: 5em ;
+    padding-top: 6em ;
 
     .banner-wrapper {
       width: 100vw;
-      height: 105vh;
+      height: 49em;
     }
 
     .containerHero {
@@ -199,13 +199,31 @@
     }
   }
 }
+@media (max-width:600px) {
+  .container-banner{
+
+    .banner-wrapper {
+      height: 130vh;
+    }
+    .containerHero {
+      margin: 22.5em 0 0;
+
+    }
+  }
+}
+
 @media (max-width:500px) {
   .container-banner{
 
     .banner-wrapper {
-      height: 125vh;
+      height: 53em;
     }
-  }}
+    .containerHero {
+      margin: 22.5em 0 0;
+
+    }
+  }
+}
 
 @media (max-width:420px) {
   .container-banner{
@@ -215,7 +233,7 @@
     }
 
     .containerHero {
-        margin: 18em 0 0;
+        margin: 15em 0 0;
         flex-direction: column;
         text-align: center;
 
@@ -264,11 +282,11 @@
 
     .banner-wrapper {
       width: 100vw;
-      height: 113vh;
+      height: 42.5em;
     }
 
     .containerHero {
-      margin: 15em 0 0;
+      margin: 12em 0 0;
       flex-direction: column;
 
       .txtIntro{
