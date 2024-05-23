@@ -229,21 +229,25 @@
   .container-banner{
 
     .banner-wrapper {
-      height: 50em;
+      height: 43em;
     }
 
     .containerHero {
-        margin: 15em 0 0;
+      font-size: 1.5rem;
+
+        margin: 13em 0 0;
         flex-direction: column;
         text-align: center;
 
         .txtIntro {     
-            font-size: 1.5rem;
-
             width:90%;
 
+            h3{
+              font-size: 2rem;
+
+            }
             .tech-font{
-                font-size: 3.5rem;
+                font-size: 3rem;
             }
             .contato {
                 flex-direction: column;

@@ -57,8 +57,17 @@
 
 @media (max-width:420px) {
     #about{
-        padding-top: 3em;
+        padding-top: 0em;
         scroll-margin-top: 15px; 
+
+        .sobre-nos{
+            .txt{
+                font-size: 2rem;
+            }
+            .title{
+                font-size: 3rem;
+            }
+        }
     }
 }
 
