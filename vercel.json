@@ -1,6 +1,5 @@
 {
     "version": 2,
-
     "routes": [
       { "handle": "filesystem" },
       {
@@ -8,16 +7,18 @@
         "dest": "/frontend/index.html"
       }
     ],
-
     "builds": [
       {
         "src": "frontend/package.json",
         "use": "@vercel/node"
-      },
-    {
-      "src": "backend/package.json",
-      "use": "@vercel/node"
-    }
+      }
+    ],
     
-  ]
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/frontend/index.html"
+      }
+    ]
+    
   }
