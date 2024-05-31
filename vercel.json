@@ -1,5 +1,6 @@
 {
     "version": 2,
+    
     "builds": [
       {
         "src": "frontend/package.json",
@@ -9,7 +10,11 @@
       "src": "backend/package.json",
       "use": "@vercel/node"
     }
+    
   ],
+    "routes": [
+      { "handle": "filesystem" }
+    ] ,
     "hooks": {
       "build": "chmod +x node_modules/.bin/vite && vite build"
     }
