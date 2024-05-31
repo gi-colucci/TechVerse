@@ -52,7 +52,7 @@ export function Form() {
                         value={form.name}
                         onChange={handleDetalhes}
                         type="text"
-                        placeholder="name"
+                        placeholder="Nome"
                     />
                 </div>
 
@@ -62,7 +62,7 @@ export function Form() {
                         value={form.email}
                         onChange={handleDetalhes}
                         type="email"
-                        placeholder="email"
+                        placeholder="Email"
                     />
                 </div>
 
@@ -72,7 +72,7 @@ export function Form() {
                        value={form.message}
                        onChange={handleDetalhes}
                        type="text"
-                       placeholder="mensagem"
+                       placeholder="Mensagem"
                     />
                 </div>
                 
