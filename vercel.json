@@ -12,9 +12,6 @@
     }
     
   ],
-    "routes": [
-      { "handle": "filesystem" }
-    ] ,
     "hooks": {
       "build": "chmod +x node_modules/.bin/vite && vite build"
     }
