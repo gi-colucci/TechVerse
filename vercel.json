@@ -4,7 +4,7 @@
       { "handle": "filesystem" },
       {
         "src": "/(.*)",
-        "dest": "/frontend/index.html"
+        "dest": "/frontend/"
       }
     ],
     "builds": [
@@ -17,7 +17,7 @@
     "rewrites": [
       {
         "source": "/(.*)",
-        "destination": "/frontend/index.html"
+        "destination": "/frontend/"
       }
     ]
     
