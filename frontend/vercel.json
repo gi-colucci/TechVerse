@@ -4,8 +4,12 @@
       {
         "src": "frontend/package.json",
         "use": "@vercel/node"
-      }
-    ],
+      },
+    {
+      "src": "backend/package.json",
+      "use": "@vercel/node"
+    }
+  ],
     "hooks": {
       "build": "chmod +x node_modules/.bin/vite && vite build"
     }
