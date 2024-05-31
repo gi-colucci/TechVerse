@@ -1,12 +1,6 @@
 {
     "version": 2,
-    "routes": [
-      { "handle": "filesystem" },
-      {
-        "src": "/(.*)",
-        "dest": "/frontend/"
-      }
-    ],
+   
     "builds": [
       {
         "src": "frontend/package.json",
