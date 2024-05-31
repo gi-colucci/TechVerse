@@ -19,7 +19,7 @@ export function Form() {
     //   });
     // }, []);
 
-    const [detalhes, setDatalhes] = useState({
+    const [form, setDatalhes] = useState({
         email: '',
         message: '',
       });
@@ -36,7 +36,7 @@ export function Form() {
       };
     
       const handleSendEmail = () => {
-        sendCustomEmail(detalhes);
+        sendCustomEmail(form);
       };
 
     return (
@@ -49,7 +49,7 @@ export function Form() {
                 <div className='input-group'>
                     <input
                         name="name"
-                        value={detalhes.name}
+                        value={form.name}
                         onChange={handleDetalhes}
                         type="text"
                         placeholder="name"
@@ -59,7 +59,7 @@ export function Form() {
                 <div className='input-group'>
                     <input
                         name="email"
-                        value={detalhes.email}
+                        value={form.email}
                         onChange={handleDetalhes}
                         type="email"
                         placeholder="email"
@@ -69,7 +69,7 @@ export function Form() {
                 <div className='input-group-msg'>
                     <input
                        name="message"
-                       value={detalhes.message}
+                       value={form.message}
                        onChange={handleDetalhes}
                        type="text"
                        placeholder="mensagem"

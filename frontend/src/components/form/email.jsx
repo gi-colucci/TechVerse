@@ -8,9 +8,9 @@ const sendCustomEmail = (detalhes)=>{
       import.meta.env.VITE_EMAIL_SERVICE_ID,
       import.meta.env.VITE_EMAIL_TEMPLATE_ID,
       {
-        name:detalhes.name,
-        email:detalhes.email,
-        mensagem:detalhes.message,
+        name:form.name,
+        email:form.email,
+        mensagem:form.message,
       }
     )
     .then((response)=>{
