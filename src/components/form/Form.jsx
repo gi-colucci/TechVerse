@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { sendCustomEmail } from './email';
-import './Form.scss'
-import axios from 'axios';
+import './Form.scss';
 import ScrollReveal from 'scrollreveal';
 
 export function Form() {
@@ -20,24 +18,25 @@ export function Form() {
     // }, []);
 
     const [form, setDatalhes] = useState({
+        name: '',
         email: '',
         message: '',
-      });
+    });
     
-      const handleDetalhes = (e) => {
+    const handleDetalhes = (e) => {
         const { name, value } = e.target;
-    
-        setDatalhes((prevDetalhes) => {
-          return {
+        setDatalhes((prevDetalhes) => ({
             ...prevDetalhes,
             [name]: value,
-          };
-        });
-      };
-    
-      const handleSendEmail = () => {
-        sendCustomEmail(form);
-      };
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const { name, email, message } = form;
+        const mailtoLink = `mailto:devtechverse@gmail.com?subject=Mensagem de ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}&email=${encodeURIComponent(email)}`;
+        window.location.href = mailtoLink;
+    };
 
     return (
         <div className='container-form'>
@@ -45,7 +44,7 @@ export function Form() {
             <h2 className='title'>Vamos trabalhar juntos?</h2>
             <h2 className='title'>Entre em contato</h2>
 
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className='input-group'>
                     <input
                         name="name"
@@ -77,7 +76,7 @@ export function Form() {
                 </div>
                 
                 <div className='btn-submit'>
-                    <button onClick={handleSendEmail}>Enviar</button>
+                    <button type="submit">Enviar</button>
                 </div>
             </form>
         </div>
