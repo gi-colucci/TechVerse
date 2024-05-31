@@ -34,7 +34,8 @@ export function Form() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const { name, email, message } = form;
-        const mailtoLink = `mailto:devtechverse@gmail.com?subject=Mensagem de ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}&email=${encodeURIComponent(email)}`;
+        const mailtoLink = `mailto:devtechverse@gmail.com?subject=Mensagem de ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom:%20${encodeURIComponent(email)}`;
+        console.log(mailtoLink); // Log do link mailto
         window.location.href = mailtoLink;
     };
 
