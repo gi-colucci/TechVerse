@@ -4,7 +4,7 @@ import './Projects.scss';
 import img from '../../assets/img-projects.jpeg';
 import { VscGithubAlt } from "react-icons/vsc";
 import { IoIosGlobe } from "react-icons/io";
-zz
+
 
 export function Projects() {
   // useEffect(() => {
