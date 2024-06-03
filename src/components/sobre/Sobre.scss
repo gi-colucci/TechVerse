@@ -24,8 +24,12 @@
      height: 25em;
     }    
 }
+@media (max-width:800px) {
 
-@media (max-width:720px) {
+    #about{
+        padding-top: 12em;
+        scroll-margin-top: 15px; 
+    }
     .container-sobre{
         display: flex;
         align-items: center;
@@ -41,16 +45,17 @@
         }
     }
 }
-@media (max-width:720px) {
+
+@media (max-width:600px) {
     #about{
-        padding-top: 6em;
+        padding-top: 10em;
         scroll-margin-top: 15px; 
     }
 }
 
 @media (max-width:500px) {
     #about{
-        padding-top: 7em;
+        padding-top: 13em;
         scroll-margin-top: 15px; 
     }
 }
