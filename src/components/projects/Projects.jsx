@@ -81,7 +81,7 @@ export function Projects() {
                   <img src={imgMercury} className='img'/>
                     <div className="container-desc">
                       <h2 className='txt-title'>Mercury</h2>
-                      <h3 className='txt-description'>A Mercury foi um projeto criado utilizando Html, Js && CSS, especializado na venda de veículos esportivos de alto desempenho, projetados para oferecer uma experiência de condução emocionante e potência excepcional.</h3>
+                      <h3 className='txt-description'>A Mercury foi um projeto criado utilizando HTML, CSS & JS, especializado na venda de veículos esportivos de alto desempenho, projetados para oferecer uma experiência de condução emocionante e potência excepcional.</h3>
                     </div>
                   </div>
                 </Flipped>
