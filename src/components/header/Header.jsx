@@ -1,5 +1,5 @@
 import './Header.scss'
-import imgLogo from '../../assets/logo-header-footer.svg';
+import imgLogo from '../../assets/logos/logo-header-footer.svg';
 import { Menu } from './component/menu/Menu'
 
 export function Header() {

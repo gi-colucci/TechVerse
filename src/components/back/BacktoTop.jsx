@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import imgBtnScroll from '../../assets/iconVoltar.svg'
+import imgBtnScroll from '../../assets/icons/iconVoltar.svg'
 import './BacktoTop.scss';
 
 export function BackToTopButton() {

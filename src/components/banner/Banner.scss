@@ -154,15 +154,37 @@
   }
 }
 
-@media (max-width: 1720px) {
-  .container-banner {
-      .banner-wrapper {
-          animation: none;
-    
-          .banner {
-             opacity: 0;
-          }
+@media (max-width: 720px) {
+  .container-banner{
+    padding-top: 6em ;
+
+    .banner-wrapper {
+      width: 100vw;
+      height: 51.5em;
+    }
+
+    .containerHero {
+      margin: 20em 0 0;
+      flex-direction: column;
+      text-align: center;
+
+      .txtIntro {     
+        width:90%;
+
+        .tech-font {
+          align-self: center;
+        }
+
+        .contato {
+          flex-direction: column;
+        }
       }
+
+      .imgLogo {
+        width: 15em;
+        height: 15em;
+      }
+    }
   }
 }
 
@@ -172,7 +194,7 @@
 
     .banner-wrapper {
       width: 100vw;
-      height: 49em;
+      height: 51.5em;
     }
 
     .containerHero {

@@ -9,10 +9,14 @@
         scroll-margin-top: 95px; 
         overflow-y: auto; 
         height: 30px; 
-      }
+    }
 
     .input-group{
         margin-top: 2em;
+
+        input{
+            border-color: #60009A ;
+        }
     }
 
     .input-group-msg{
@@ -20,6 +24,14 @@
 
         input{
             height: 10em;
+            position: relative;
+            z-index: 1; 
+            border-radius: 15px;
+            background-color: #171428;
+            width: 100%;
+            font-size: 1.5rem;
+            text-indent: 20px;
+            border-color: #60009A ;
         }
     }
 
@@ -47,6 +59,8 @@
             width: 100%;
             font-size: 1.5rem;
             text-indent: 20px;
+            border-color: #60009A ;
+
         }
 
         .btn-submit {
@@ -55,11 +69,10 @@
             justify-content: center;
 
             button{
-            width: 10em;
-            padding: 1em;
-            text-indent: 0;
-            cursor: pointer;
-         
+                width: 10em;
+                padding: 1em;
+                text-indent: 0;
+                cursor: pointer;
 
                 &:hover{
                     color: red;
@@ -79,12 +92,11 @@
         gap: 1em;
 
         .input-group-msg, .input-group{         
-          width:25em;
+            width:25em;
         }
     }
 }
 @media (max-width:420px) {
-    
     form{
         display: flex;
         align-items: center;
@@ -93,7 +105,7 @@
         gap: 1em;
 
         .input-group-msg, .input-group{         
-          width:15em;
+            width:15em;
         }
     }
 }

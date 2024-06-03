@@ -3,20 +3,6 @@ import './Form.scss';
 import ScrollReveal from 'scrollreveal';
 
 export function Form() {
-    // useEffect(() => {
-    //     ScrollReveal().reveal('.container-form ',
-    //     {
-    //     origin: 'left', 
-    //     distance: '100px', 
-    //     duration: 1000,
-    //     delay: 0, 
-    //     easing: 'ease-out', 
-    //     opacity: 0, 
-    //     scale: 1,
-    //     reset: false, 
-    //   });
-    // }, []);
-
     const [form, setDatalhes] = useState({
         name: '',
         email: '',
@@ -52,7 +38,7 @@ export function Form() {
                         value={form.name}
                         onChange={handleDetalhes}
                         type="text"
-                        placeholder="Seu Nome"
+                        placeholder="Seu nome"
                     />
                 </div>
 
@@ -62,7 +48,7 @@ export function Form() {
                         value={form.email}
                         onChange={handleDetalhes}
                         type="email"
-                        placeholder="Seu E-mail"
+                        placeholder="Seu e-mail"
                     />
                 </div>
 

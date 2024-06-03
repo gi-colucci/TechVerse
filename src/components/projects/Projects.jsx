@@ -1,26 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { Flipper, Flipped } from 'react-flip-toolkit';
 import './Projects.scss';
-import img from '../../assets/img-projects.jpeg';
 import { VscGithubAlt } from "react-icons/vsc";
 import { IoIosGlobe } from "react-icons/io";
+import imgLemnos from '../../assets/logos/LemnosLogo.svg';
+import imgMercury from '../../assets/logos/MercuryLogo.svg'
+import imgAlpha from '../../assets/logos/AlphaSpeed.svg';
+import imgGym from '../../assets/logos/GymInfinityLogo.svg';
 
 
 export function Projects() {
-  // useEffect(() => {
-  //   ScrollReveal().reveal('#container-projects',
-  //   {
-  //   origin: 'left', 
-  //   distance: '100px', 
-  //   duration: 1000,
-  //   delay: 0, 
-  //   easing: 'ease-out', 
-  //   opacity: 0, 
-  //   scale: 1, 
-  //   reset: false, 
-  // });
-  // }, []);
-  
   const [isFlipped1, setIsFlipped1] = useState(false);
   const [isFlipped2, setIsFlipped2] = useState(false);
   const [isFlipped3, setIsFlipped3] = useState(false);
@@ -54,7 +43,7 @@ export function Projects() {
             <Flipper flipKey={isFlipped1}>
                 <Flipped flipId="front">
                   <div className={`front ${isFlipped1 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
+                    <img src={imgLemnos} className='img'/>
                     <div className="container-desc">
                       <h2 className='txt-title'>Lemnos</h2>
                       <h3 className='txt-description'>Projeto e-commerce feito utilizando React, SCSS & JS. Desde sua fundação em 2023, a Lemnos lidera o mercado tecnológico com a sua inovação, oferecendo uma ampla gama de produtos eletrônicos de ponta. </h3>
@@ -63,7 +52,7 @@ export function Projects() {
                 </Flipped>
                 <Flipped flipId="back">
                   <div className={`back ${isFlipped1 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
+                  <img src={imgLemnos} className='img'/>
                     <div className="container-nav">
                       <h2 className='txt-title'>Lemnos</h2>
                       <a href='https://lemnos.vercel.app/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
@@ -79,7 +68,7 @@ export function Projects() {
             <Flipper flipKey={isFlipped2}>
                 <Flipped flipId="front">
                   <div className={`front ${isFlipped2 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
+                  <img src={imgMercury} className='img'/>
                     <div className="container-desc">
                       <h2 className='txt-title'>Mercury</h2>
                       <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.</h3>
@@ -88,7 +77,7 @@ export function Projects() {
                 </Flipped>
                 <Flipped flipId="back">
                   <div className={`back ${isFlipped2 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
+                  <img src={imgMercury} className='img'/>
                     <div className="container-nav">
                       <h2 className='txt-title'>Mercury</h2>
                        <a href='https://lucasbonato.github.io/Mercury/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
@@ -104,7 +93,7 @@ export function Projects() {
           <Flipper flipKey={isFlipped3}>
                 <Flipped flipId="front">
                   <div className={`front ${isFlipped3 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
+                  <img src={imgAlpha} className='img'/>
                     <div className="container-desc">
                       <h2 className='txt-title'>Alpha Speed</h2>
                       <h3 className='txt-description'>Alpha Speed, e-commerce de veículos excepcionais, feito utilizando HTML, CSS & JS. Fundada em 2021, tendo uma longa história de fornecer veículos de alta qualidade.</h3>
@@ -113,7 +102,7 @@ export function Projects() {
                 </Flipped>
                 <Flipped flipId="back">
                   <div className={`back ${isFlipped3 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
+                  <img src={imgAlpha} className='img'/>
                     <div className="container-nav">
                       <h2 className='txt-title'>Alpha Speed</h2>
                       <a href='https://l7643.github.io/AlphaSpeed/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>
@@ -129,7 +118,7 @@ export function Projects() {
             <Flipper flipKey={isFlipped4}>
                 <Flipped flipId="front">
                   <div className={`front ${isFlipped4 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
+                    <img src={imgGym} className='img'/>
                     <div className="container-desc">
                       <h2 className='txt-title'>Gym Infinity</h2>
                       <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.. </h3>
@@ -138,7 +127,7 @@ export function Projects() {
                 </Flipped>
                 <Flipped flipId="back">
                   <div className={`back ${isFlipped4 ? 'flipped' : ''}`}>
-                    <img src={img} className='img'/>
+                  <img src={imgGym} className='img'/>
                     <div className="container-nav">
                       <h2 className='txt-title'>Gym Infinity</h2>
                       <a href='https://lucasbonato.github.io/Infinity-Gym/' className='btnNavProj'><IoIosGlobe className='icon'/>Projeto Online</a>

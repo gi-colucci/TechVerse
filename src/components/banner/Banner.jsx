@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import imgLogo from '../../assets/logo.svg';
+import imgLogo from '../../assets/logos/logo.svg';
 import BackgroundBanner from '../../assets/background-banner.png';
-import iconIg from '../../assets/icon-ig.png';
-import iconLi from '../../assets/icon-li.png';
-import iconFb from '../../assets/icon-fb.png';
+import iconIg from '../../assets/icons/icon-ig.svg';
+import iconLi from '../../assets/icons/icon-li.svg';
+import iconFb from '../../assets/icons/icon-fb.svg';
 import './Banner.scss'
 
 export function Banner() {
