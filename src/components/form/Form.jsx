@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import './Form.scss';
-import ScrollReveal from 'scrollreveal';
 
 export function Form() {
     const [form, setDatalhes] = useState({
@@ -8,7 +8,9 @@ export function Form() {
         email: '',
         message: '',
     });
-    
+
+    const [isVisible, setIsVisible] = useState(false);
+
     const handleDetalhes = (e) => {
         const { name, value } = e.target;
         setDatalhes((prevDetalhes) => ({
@@ -25,8 +27,29 @@ export function Form() {
         window.location.href = mailtoLink;
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const container = document.getElementById('container-form');
+            const rect = container.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                setIsVisible(true);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className='container-form'>
+        <motion.div
+            className="container-form"
+            id="container-form"
+            initial={{ x: '-100%', opacity: 0 }}
+            animate={isVisible ? { x: 0, opacity: 1 } : { x: '-100%', opacity: 0 }}
+            transition={{ duration: 1.5 }}
+        >
             <h2 id="contact"></h2>
             <h2 className='title'>Vamos trabalhar juntos?</h2>
             <h2 className='title'>Entre em contato:</h2>
@@ -66,6 +89,6 @@ export function Form() {
                     <button type="submit">Enviar</button>
                 </div>
             </form>
-        </div>
+        </motion.div>
     );
 }

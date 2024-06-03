@@ -1,13 +1,13 @@
 import React, { useState} from 'react';
 import { Flipper, Flipped } from 'react-flip-toolkit';
 import './Projects.scss';
+import { motion } from 'framer-motion';
 import { VscGithubAlt } from "react-icons/vsc";
 import { IoIosGlobe } from "react-icons/io";
 import imgLemnos from '../../assets/logos/LemnosLogo.svg';
 import imgMercury from '../../assets/logos/MercuryLogo.svg'
 import imgAlpha from '../../assets/logos/AlphaSpeed.svg';
 import imgGym from '../../assets/logos/GymInfinityLogo.svg';
-
 
 export function Projects() {
   const [isFlipped1, setIsFlipped1] = useState(false);
@@ -36,10 +36,17 @@ export function Projects() {
   };
 
   return (
-    <section id="container-projects">
-      <h2 className='title'>Nossos Projetos</h2>
-      <div id="projetos">
-            <div className='proj'>
+      <motion.section id="container-projects"
+      initial={{ opacity: 0, x: -50 }} 
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }} 
+    >
+        <h2 className='title'>Nossos Projetos</h2>
+        <div id="projetos">
+            <motion.div className='proj'
+                  initial={{ opacity: 0, x: -50 }} 
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1 }} >
             <Flipper flipKey={isFlipped1}>
                 <Flipped flipId="front">
                   <div className={`front ${isFlipped1 ? 'flipped' : ''}`}>
@@ -62,10 +69,13 @@ export function Projects() {
                 </Flipped>
               </Flipper>
               <h2 className='txt-click' onClick={() => handleClick(1)}>Click Here →</h2>
-            </div>
+            </motion.div>
 
-            <div className='proj'>
-            <Flipper flipKey={isFlipped2}>
+            <motion.div className='proj'
+                  initial={{ opacity: 0, x: -50 }} 
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1 }} >
+                 <Flipper flipKey={isFlipped2}>
                 <Flipped flipId="front">
                   <div className={`front ${isFlipped2 ? 'flipped' : ''}`}>
                   <img src={imgMercury} className='img'/>
@@ -87,9 +97,12 @@ export function Projects() {
                 </Flipped>
               </Flipper>
               <h2 className='txt-click' onClick={() => handleClick(2)}>Click Here →</h2>
-            </div>
+            </motion.div>
 
-          <div className='proj'>
+          <motion.div className='proj'
+                initial={{ opacity: 0, x: -50 }} 
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }} >
           <Flipper flipKey={isFlipped3}>
                 <Flipped flipId="front">
                   <div className={`front ${isFlipped3 ? 'flipped' : ''}`}>
@@ -112,10 +125,12 @@ export function Projects() {
                 </Flipped>
               </Flipper>
               <h2 className='txt-click' onClick={() => handleClick(3)}>Click Here →</h2>
-            </div>
+            </motion.div>
 
-            <div className='proj'>
-            <Flipper flipKey={isFlipped4}>
+            <motion.div className='proj'
+                  initial={{ opacity: 0, x: -50 }} 
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1 }} >            <Flipper flipKey={isFlipped4}>
                 <Flipped flipId="front">
                   <div className={`front ${isFlipped4 ? 'flipped' : ''}`}>
                     <img src={imgGym} className='img'/>
@@ -137,8 +152,8 @@ export function Projects() {
                 </Flipped>
               </Flipper>
               <h2 className='txt-click' onClick={() => handleClick(4)}>Click Here →</h2>
-            </div>
+            </motion.div>
         </div>
-      </section>
+        </motion.section>
   )
 }
