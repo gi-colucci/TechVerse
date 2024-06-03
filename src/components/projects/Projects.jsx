@@ -81,7 +81,7 @@ export function Projects() {
                   <img src={imgMercury} className='img'/>
                     <div className="container-desc">
                       <h2 className='txt-title'>Mercury</h2>
-                      <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.</h3>
+                      <h3 className='txt-description'>A Mercury foi um projeto criado utilizando Html, Js && CSS, especializado na venda de veículos esportivos de alto desempenho, projetados para oferecer uma experiência de condução emocionante e potência excepcional.</h3>
                     </div>
                   </div>
                 </Flipped>
@@ -136,7 +136,7 @@ export function Projects() {
                     <img src={imgGym} className='img'/>
                     <div className="container-desc">
                       <h2 className='txt-title'>Gym Infinity</h2>
-                      <h3 className='txt-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in quam dapibus, consequat urna scelerisque, tempor est.. </h3>
+                      <h3 className='txt-description'>Um projeto com aspecto simples focado no front-end, não conectado ao banco de dados, portanto não é um site "vivo" se resumindo a página inicial de uma academia demostrando tecnicas de desnvolvimento front. </h3>
                     </div>
                   </div>
                 </Flipped>
