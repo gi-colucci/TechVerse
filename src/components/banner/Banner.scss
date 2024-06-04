@@ -217,14 +217,35 @@
   .container-banner{
 
     .banner-wrapper {
-      height: 145vh;
+      height: 135vh;
     }
-    .containerHero {
-      margin: 21em 0 0;
 
+    .containerHero {
+      margin: 16em 0 0;
+
+      .txtIntro {     
+        width:90%;
+
+        h3{
+          font-size: 2.5rem;
+
+        }
+        .tech-font{
+            font-size: 4rem;
+        }
+        .contato {
+            flex-direction: column;
+
+            .btn-contato {
+                font-size: 2rem;
+
+            }
+          }
+        }
+      }
     }
   }
-}
+
 
 @media (max-width:420px) {
   .container-banner{
