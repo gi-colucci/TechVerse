@@ -52,7 +52,24 @@
             font-size: 3rem;
 
             .line{
-                height: 110vh;
+                height: 130vh;
+            }
+        }      
+    }
+}
+
+@media (max-width:600px) {
+    .container{
+        width: 90%;
+        margin: 2.5em auto;
+        flex-direction: column;
+        
+        .valores, .title{
+            width: 100%;
+            font-size: 3rem;
+
+            .line{
+                height: 165vh;
             }
         }      
     }
@@ -69,7 +86,39 @@
             font-size: 3rem;
 
             .line{
-                height:45em;
+                height:185vh;
+            }
+        }
+    }
+}
+
+@media (max-width:470px) {
+    .container{
+        width: 90%;
+        margin: 2.5em auto;
+        flex-direction: column;
+
+        .title{
+            width: 100%;
+            font-size: 2.5rem;
+        }
+
+        .valores{
+            width: 100%;
+            font-size: 1rem;
+
+
+            .line{
+                height: 180vh;
+            }
+
+            .textValues{
+                h3{
+                    margin-top: 2.5rem;
+                    span{
+                        font-size: 3rem;
+                    }
+                }
             }
         }
     }
@@ -91,7 +140,7 @@
             font-size: 1rem;
 
             .line{
-                height: 110em;
+                height: 180vh;
             }
 
             .textValues{
@@ -105,6 +154,7 @@
         }
     }
 }
+
 @media (max-width:320px) {
 
     .container{
