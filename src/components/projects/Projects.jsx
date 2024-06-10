@@ -68,7 +68,7 @@ export function Projects() {
                   </div>
                 </Flipped>
               </Flipper>
-              <h2 className='txt-click' onClick={() => handleClick(1)}>Click Here →</h2>
+              <h2 className='txt-click' onClick={() => handleClick(1)}>Clique aqui →</h2>
             </motion.div>
 
             <motion.div className='proj'
@@ -96,7 +96,7 @@ export function Projects() {
                   </div>
                 </Flipped>
               </Flipper>
-              <h2 className='txt-click' onClick={() => handleClick(2)}>Click Here →</h2>
+              <h2 className='txt-click' onClick={() => handleClick(1)}>Clique aqui →</h2>
             </motion.div>
 
           <motion.div className='proj'
@@ -124,7 +124,7 @@ export function Projects() {
                   </div>
                 </Flipped>
               </Flipper>
-              <h2 className='txt-click' onClick={() => handleClick(3)}>Click Here →</h2>
+              <h2 className='txt-click' onClick={() => handleClick(1)}>Clique aqui →</h2>
             </motion.div>
 
             <motion.div className='proj'
@@ -151,7 +151,7 @@ export function Projects() {
                   </div>
                 </Flipped>
               </Flipper>
-              <h2 className='txt-click' onClick={() => handleClick(4)}>Click Here →</h2>
+              <h2 className='txt-click' onClick={() => handleClick(1)}>Clique aqui →</h2>
             </motion.div>
         </div>
         </motion.section>

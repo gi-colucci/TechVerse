@@ -14,13 +14,13 @@ export function Header() {
               <a href="/">Home</a>
             </li>
             <li className="link">
-              <a href="#about">About</a>
+              <a href="#about">Sobre</a>
             </li>
             <li className="link">
-              <a href="#container-projects">Projects</a>
+              <a href="#container-projects">Projetos</a>
             </li>
             <li className="link">
-              <a href="#contact">Contact</a>
+              <a href="#contact">Contato</a>
             </li>
           </ul>
         </nav>
