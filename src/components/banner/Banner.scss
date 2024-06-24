@@ -7,7 +7,7 @@
   position: relative;
 
   .banner-wrapper {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: absolute;
     top: 0;
@@ -154,16 +154,16 @@
   }
 }
 
-@media (max-width: 1720px) {
+@media (max-width: 1866px) {
   .container-banner {
-      .banner-wrapper {
-          animation: none;
-    
-          .banner {
-             opacity: 0;
-          }
-      }
-  }
+    .banner-wrapper {
+      animation: none;
+
+        .banner {
+           opacity: 0;
+        }
+    }
+}
 }
 
 @media (max-width: 800px) {
@@ -348,12 +348,13 @@
 
 @keyframes moveBanner {
   0% {
-    transform: translateX(80%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(75%); 
+    transform: translateX(-10%);
   }
 }
+
 
 @keyframes animar1 {
   0% {

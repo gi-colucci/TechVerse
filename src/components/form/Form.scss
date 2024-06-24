@@ -23,6 +23,7 @@
         margin-top: 2em;
 
         input{
+            color:white;
             height: 10em;
             position: relative;
             z-index: 1; 
@@ -52,6 +53,7 @@
         }
 
         input, button{
+            color:white;
             border-radius: 15px;
             border: 1px solid;
             background-color: #171428;
@@ -60,7 +62,6 @@
             font-size: 1.5rem;
             text-indent: 20px;
             border-color: #60009A ;
-
         }
 
         .btn-submit {
